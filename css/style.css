@@ -1,0 +1,259 @@
+@font-face {
+
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+
+  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+.body {
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #F2F2F2;
+
+}
+
+.main-header {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+
+.navigation-list {
+  list-style: none;
+}
+
+.navigation-item {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigation-counter {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 10px;
+  background-color: #7DB54F;
+  color: #FFFFFF;
+}
+
+.navigation-link-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.main-index {
+  background-color: #FFFFFF;
+}
+
+.welcome {
+  background-color: #787d80;
+  background-image: url(../images/welcome-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  /*почему-то картинка стоит коряво в итоге*/
+}
+
+/*benefits*/
+
+.benefits {
+  text-align: center;
+}
+
+.benefits-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.benefits-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.benefits-list {
+  list-style: none;
+}
+
+.benefits-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFFFFF;
+}
+
+.benefits-item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.benefits-item-blue {
+  background-color: #82B3D3;
+}
+
+.benefits-item-light-gray {
+  background-color: rgba(131, 179, 211, 0.12);
+  ;
+}
+
+.benefits-item-dark-gray {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+/*service*/
+
+.service {
+  text-align: center;
+}
+
+.service-list {
+  list-style: none;
+}
+
+.service-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.service-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.service-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.service-item-white {
+  background-color: #FFFFFF;
+}
+
+.service-item-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.service-item-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+/*hotels*/
+
+.hotels {
+  text-align: center;
+}
+
+.hotels-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.hotels-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+
+.hotels-search {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+  color: #FFFFFF;
+}
+
+.newsteller {
+  text-align: center;
+  background-color: #90acba;
+  background-image: url(../images/subscribe-background.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  color: #FFFFFF;
+}
+
+.newsteller-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.newsteller-text {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.newsteller-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  border: none;
+}
+
+.footer-social-list {
+  list-style: none;
+}
+
+.footer-social-link {
+  text-decoration: none;
+}
+
+.tel {
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.copyright-link {
+  text-decoration: none;
+}
+
+/*catalog*/
