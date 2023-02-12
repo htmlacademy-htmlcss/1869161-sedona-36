@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+
     <link href="css/style.css" rel="stylesheet">
+
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -25,22 +27,21 @@
         </ul>
       </nav>
 
-      <ul class="navigation-user">
+      <ul class="navigation-user-list">
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-user-link" href="#">
               <span class="visually-hidden">Избранное</span>
             </a>
               <span class="navigation-counter">12</span>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Хочу сюда!</span>
-            </a> <!--Не знаю, куда ведет данная кнопка / ссылка, поэтому сделала пока так -->
+            <a class="navigation-link-button" href="#">Хочу сюда!
+            </a>
           </li>
         </ul>
 
@@ -49,8 +50,7 @@
     <main class="main-index">
       <h1 class="visually-hidden">Сайт города Седона</h1>
       <section class="welcome">
-        <img class="welcome" src="images/welcome.svg" width="458" height="352"  alt="Welcome to SEDONA!">
-        <img class="welcome-background" src="images/welcome-background.jpg" width="1200" height="485" alt="Вид на горы в Седоне.">
+        <img class="welcome-sedona" src="images/welcome.svg" width="458" height="352"  alt="Welcome to SEDONA!">
       </section>
 
 
@@ -62,17 +62,19 @@
           Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
         </p>
         <ul class="benefits-list">
-          <li class="benefits-item">
-            <h3 class="benefits-item-title">
+          <li class="benefits-item benefits-item-blue">
+            <div class="benefits-wrapper">
+              <h3 class="benefits-item-title">
               Настоящий городок
-            </h3>
-            <p class="benefits-item-text">
+              </h3>
+              <p class="benefits-item-text">
               Седона — не аттракцион для туристов, там течёт своя жизнь
-            </p>
+              </p>
+            </div>
             <img class="benefits-img" src="images/benefits-1.jpg" width="800" height="384" alt="city of Sedona.">
           </li>
 
-          <li class="benefits-item">
+          <li class="benefits-item benefits-item-light-gray">
             <h3 class="benefits-item-title">
               Небольшая площадь
             </h3>
@@ -81,7 +83,7 @@
             </p>
           </li>
 
-          <li class="benefits-item">
+          <li class="benefits-item benefits-item-dark-gray">
             <h3 class="benefits-item-title">
               Красивая дорога
             </h3>
@@ -90,7 +92,7 @@
             </p>
           </li>
 
-          <li class="benefits-item">
+          <li class="benefits-item benefits-item-light-gray">
             <h3 class="benefits-item-title">
               Мало туристов
             </h3>
@@ -99,14 +101,16 @@
             </p>
           </li>
 
-          <li class="benefits-item">
+          <li class="benefits-item benefits-item-blue">
             <img class="benefits-img" src="images/benefits-2.jpg" width="800" height="385" alt="Canyon.">
-            <h3 class="benefits-item-title">
+            <div class="benefits-wrapper">
+              <h3 class="benefits-item-title">
               Там есть мост дьявола
-            </h3>
-            <p class="benefits-item-text">
+              </h3>
+              <p class="benefits-item-text">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
-            </p>
+              </p>
+            </div>
           </li>
         </ul>
       </section>
@@ -129,7 +133,7 @@
               </p>
             </li>
 
-            <li class="service-item">
+            <li class="service-item service-item-white">
               <h3 class="service-item-title">
                 Еда
               </h3>
