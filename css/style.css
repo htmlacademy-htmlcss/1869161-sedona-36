@@ -17,9 +17,14 @@
   font-display: swap;
 }
 
-.body {
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
@@ -34,14 +39,16 @@
 }
 
 /*header*/
-.main-header {
+.page-header {
   display: flex;
   padding: 0 70px;
   background-color: #FFFFFF;
+  color: #000000;
 }
 
 .navigation {
   width: 620px;
+  margin: 0 auto;
 }
 
 .navigation-logo {
@@ -68,7 +75,7 @@
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
-  color: inherit;
+  color: #000000;
   text-decoration: none;
 }
 
