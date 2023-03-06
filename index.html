@@ -212,7 +212,7 @@
       </section>
 
       <address class="footer-contacts">
-        <h2 class="visually-hidden" hidden>Контакты</h2>
+        <h2 class="visually-hidden">Контакты</h2>
         <a class="tel" href="tel:+78128121212"> +7 (812) 812-12-12</a>
       </address>
 
@@ -226,5 +226,50 @@
 
     </footer>
     </div>
+
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-residence-time">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+      <section class="modal-content">
+
+        <h2 class="modal-title headline">Поиск гостиницы в Седоне</h2>
+
+        <form class="residence-time-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="modal-label-field" for="arrival-time">Дата заезда:</label>
+
+            <div class="modal-wrapper">
+              <input class="residence-date-field field" id="arrival-time" name="arrival-time" type="data">
+              <p class="description-modal-field text-color-red">Мы не можем отправить вас в прошлое.</p>
+            </div>
+
+            <label class="modal-label-field" for="departure-date">Дата заезда:</label>
+
+            <div class="modal-wrapper">
+              <input class="residence-date-field field" id="departure-date" name="departure-date" type="text">
+              <p class="description-modal-field">На эти даты есть свободные номера. Пока есть.</p>
+            </div>
+
+            <div class="field-group-modal">
+              <label class="modal-label-field" for="number-adults">Взрослые:</label>
+              <button class="change-number-button minus-button"></button>
+              <input class="number-people-field field" id="number-adults" name="number-adults" type="text">
+              <button class="change-number-button plus-button"></button>
+            </div>
+
+            <div class="field-group-modal">
+              <label class="modal-label-field" for="number-children">Дети:</label>
+              <button class="change-number-button minus-button"></button>
+              <input class="number-people-field field" id="number-children" name="number-children" type="text">
+              <button class="change-number-button plus-button"></button>
+            </div>
+
+            <a class="link-search-modal button blue-button" href="#">Найти</a>
+        </form>
+      </section>
+    </div>
+  </div>
+
   </body>
 </html>
