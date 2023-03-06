@@ -37,6 +37,7 @@
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
+
           <li class="user-menu-item">
             <a class="user-menu-link favourites-link" href="#">
               <svg class="user-menu-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17" fill="none" viewBox="0 0 18 17" aria-hidden="true" focusable="false">
@@ -55,7 +56,7 @@
 
     <main class="main-container main-index">
       <section class="welcome">
-        <h1 class="visually-hidden">Сайт города Седона</h1>
+        <h1 class="visually-hidden" hidden>Сайт города Седона</h1>
         <img class="welcome-sedona" src="images/welcome.svg" width="458" height="352"  alt="Welcome to SEDONA!">
       </section>
 
@@ -104,7 +105,7 @@
     </section>
 
       <section class="service">
-        <h2 class="service-title headline">
+        <h2 class="service-heading headline">
           Приезжайте в Седону отдохнуть<br> в комфорте и уюте!
         </h2>
         <p class="service-text text-gray">
@@ -113,7 +114,7 @@
         <ul class="service-list">
 
             <li class="service-item">
-              <h3 class="service-item-title">
+              <h3 class="service-title">
                 Жильё
               </h3>
               <p class="service-item-text text-gray">
@@ -122,7 +123,7 @@
             </li>
 
             <li class="service-item">
-              <h3 class="service-item-title">
+              <h3 class="service-title">
                 Еда
               </h3>
               <p class="service-item-text text-gray">
@@ -131,7 +132,7 @@
             </li>
 
             <li class="service-item">
-              <h3 class="service-item-title">
+              <h3 class="service-title">
                 Сувениры
               </h3>
               <p class="service-item-text text-gray">
@@ -149,7 +150,7 @@
         <p class="hotels-text text-gray">
           Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
-        <a class="button button-hotels-search brow-button" href="catalog.html">
+        <a class="button button-hotels-search brown-button" href="catalog.html">
           Поиск гостиницы в Седоне
         </a>
       </section>
@@ -163,8 +164,8 @@
         </p>
 
         <form class="newsteller-form" action="https://echo.htmlacademy.ru/" method="post">
-
-            <input class="newsteller-email" placeholder="Ваш e-mail" type="email" name="email-user" required>
+            <label class="visually-hidden" for="email-user">Email</label>
+            <input class="newsteller-email field" name="email-user" id="email-user" placeholder="Ваш e-mail" type="email">
             <button class="button newsteller-button blue-button" type="submit">Подписаться</button>
         </form>
       </section>
