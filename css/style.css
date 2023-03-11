@@ -3,7 +3,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/pt-sans-regular.woff2") format("woff2");
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -11,7 +11,7 @@
   font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/pt-sans-bold.woff2") format("woff2");
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
   font-display: swap;
 }
 
@@ -99,14 +99,14 @@ body {
 }
 
 /*header*/
-.page-header {
+.main-header {
   display: flex;
   padding: 0 70px;
 }
 
 
 /*navigation*/
-.page-navigation {
+.main-navigation {
   display: flex;
   width: 650px;
 }
@@ -138,8 +138,13 @@ body {
   text-decoration: none;
 }
 
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #615048;
+}
+
 .navigation-link:focus,
-.user-menu-link:focus {
+.social-menu-link:focus {
   outline-offset: -1px;
 }
 
@@ -153,7 +158,7 @@ body {
 }
 
 
-.user-menu-list {
+.social-menu-list {
   display: flex;
   align-items: center;
   margin: 0;
@@ -163,11 +168,11 @@ body {
   list-style: none;
 }
 
-.user-menu-item:last-child {
+.social-menu-item:last-child {
   margin-left: 20px;
 }
 
-.user-menu-link {
+.social-menu-link {
   display: flex;
   position: relative;
   min-width: 44px;
@@ -194,12 +199,17 @@ body {
   text-align: center;
 }
 
-.user-menu-icon {
+.social-menu-icon {
   margin: auto;
   fill: #000000;
 }
 
-.user-menu-button {
+.social-menu-link:hover .social-menu-icon,
+.social-menu-link:focus .social-menu-icon {
+  fill: #615048;
+}
+
+.social-menu-button {
   padding: 8px 34px;
   background-color: #756157;
 }
@@ -241,24 +251,24 @@ body {
 }
 
 
-/*advantages*/
+/*benefits*/
 
-.advantages {
+.benefits {
   text-align: center;
   padding-top: 69px;
 }
 
-.advantages-heading {
+.benefits-heading {
   width: 630px;
   margin: 0 auto 25px;
 }
 
-.advantages-text {
+.benefits-text {
   margin-top: 0;
   margin-bottom: 90px;
 }
 
-.advantages-list {
+.benefits-list {
   display: grid;
   grid-template-columns: repeat(3, 400px);
   margin: 0;
@@ -266,21 +276,21 @@ body {
   list-style-type: none;
 }
 
-.advantages-item {
+.benefits-item {
   box-sizing: border-box;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item:not(.advantages-item-blue) {
-  padding: 113px 85px;
+.benefits-item:not(.benefits-item-blue) {
+  padding: 113px 84px;
 }
 
-.advantages-wrapper {
+.benefits-wrapper {
   box-sizing: border-box;
   padding: 0 85px;
 }
 
-.advantages-list .advantages-item-blue {
+.benefits-list .benefits-item-blue {
   display: flex;
   grid-column: 1 / -1;
   align-items: center;
@@ -288,13 +298,13 @@ body {
   color: #FFFFFF;
 }
 
-.advantages-title {
+.benefits-title {
   position: relative;
   width: 175px;
   margin: 0 auto 62px;
 }
 
-.advantages-title::after {
+.benefits-title::after {
   content: '';
   position: absolute;
   width: 60px;
@@ -305,18 +315,18 @@ body {
   margin-right: -30px;
 }
 
-.advantages-wrapper .advantages-title::after {
+.benefits-wrapper .benefits-title::after {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.advantages-description {
+.benefits-description {
   margin: 0;
 }
 
 
 
 
-.advantages-title,
+.benefits-title,
 .service-title {
   font-weight: 700;
   font-size: 24px;
@@ -324,13 +334,14 @@ body {
   text-transform: uppercase;
 }
 
-.advantages-description {
+.benefits-description {
   font-weight: 400;
   font-size: 18px;
   line-height: 21px;
+
 }
 
-.advantages-item:nth-child(3) {
+.benefits-item:nth-child(3) {
   background-color: rgba(131, 179, 211, 0.2);
 }
 
@@ -344,6 +355,7 @@ body {
 .service-heading {
   margin: 0 auto 20px;
   width: 505px;
+
 }
 
 .service-text {
@@ -390,16 +402,19 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
+
+  max-width: 230px;
+
 }
 
-/*hotels*/
+/*info*/
 
-.hotels {
+.info {
   padding: 95px 0;
   text-align: center;
 }
 
-.hotels-title,
+.info-title,
 .newsteller-title {
   margin: 0 0 20px;
 }
@@ -409,20 +424,20 @@ body {
   margin: 0;
 }
 
-.hotels-text {
+.info-text {
   width: 592px;
 }
 
-.hotels-text,
+.info-text,
 .newsteller-text {
   margin: 0 auto 54px;
 }
 
 
 
-.button-hotels-search {
+.button-info-search {
   display: block;
-
+  box-sizing: border-box;
   margin: 0 auto;
   border-radius: 4px;
   width: 376px;
@@ -658,18 +673,18 @@ body {
   display: flex;
 }
 
-.catalog-filter-group {
+.catalog-filter-column {
   padding: 0;
   margin: 0;
   border: none;
 }
 
-.catalog-filter-group:first-child,
-.catalog-filter-group:nth-child(3) {
+.catalog-filter-column:first-child,
+.catalog-filter-column:nth-child(3) {
   margin-right: 70px;
 }
 
-.catalog-filter-group:nth-child(2) {
+.catalog-filter-column:nth-child(2) {
   margin-right: 151px;
 }
 
@@ -744,7 +759,7 @@ body {
 
 /* range-filter-price */
 
-.catalog-filter-group:nth-child(3) {
+.catalog-filter-column:nth-child(3) {
   width: 288px;
 }
 
@@ -781,7 +796,7 @@ body {
   line-height: 24px;
   width: 17px;
   height: 24px;
-  right: 22px;
+  right: -5px;
   bottom: -68px;
   z-index: 1;
   color: #000000;
@@ -790,7 +805,7 @@ body {
 
 .filling-field::after {
   content: "до";
-  right: -120px;
+  right: -150px;
 }
 
 .range {
@@ -828,9 +843,8 @@ body {
   text-align: center;
 }
 
-.catalog-filter-group:last-child {
-  align-self: flex-end;
-  margin-bottom: -8px;
+.catalog-filter-column:last-child {
+  margin-top: 56px;
 }
 
 .button-submit {
@@ -855,7 +869,7 @@ body {
 
 /*search-result*/
 
-.search-result {
+.result {
   display: flex;
   padding: 50px 70px 40px;
   align-items: center;
@@ -917,7 +931,7 @@ body {
   margin: 0;
 }
 
-.search-result .button-sorting-current,
+.result .button-sorting-current,
 .button-sorting:hover {
   border: 2px solid #000000;
 }
@@ -960,7 +974,7 @@ body {
 }
 
 .hotel-card-title {
-  margin: 16px 0 0;
+  margin: 15px 0 0;
   font-size: 24px;
   line-height: 28px;
 }
@@ -1105,7 +1119,7 @@ body {
   border-radius: 30px;
 }
 
-.modal-residence-time {
+.modal-clients-time {
   width: 717px;
 }
 
@@ -1143,7 +1157,7 @@ body {
   margin: 0;
 }
 
-.residence-time-form {
+.clients-time-form {
   display: grid;
   box-sizing: border-box;
   grid-template-columns: 137px 198px 242px;
@@ -1154,7 +1168,7 @@ body {
   grid-column: 2 / -1;
 }
 
-.residence-date-field {
+.clients-date-field {
   border-radius: 4px;
   padding: 12px 58px 12px 20px;
   width: 440px;
@@ -1164,7 +1178,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.residence-date-field:focus {
+.clients-date-field:focus {
   outline: 3px solid #83B3D3;
 }
 
