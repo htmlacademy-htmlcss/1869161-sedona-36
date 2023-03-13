@@ -219,6 +219,7 @@ body {
 .headline {
   font-weight: 700;
   font-size: 30px;
+  margin: 0;
   line-height: 36px;
   text-transform: uppercase;
 }
@@ -598,7 +599,7 @@ body {
   background-size: cover;
   color: #FFFFFF;
   font-size: 18px;
-  padding: 35px 70px 70px;
+  padding: 35px 70px 67px;
 }
 
 
@@ -854,7 +855,7 @@ body {
 .button-reset {
   box-sizing: border-box;
   border: 3px solid transparent;
-  margin-top: 32px;
+  margin-top: 29px;
   background-color: transparent;
 }
 
@@ -974,7 +975,7 @@ body {
 }
 
 .hotel-card-title {
-  margin: 15px 0 0;
+  margin: 14px 0 0;
   font-size: 24px;
   line-height: 28px;
 }
